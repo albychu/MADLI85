@@ -12,7 +12,7 @@ Author | Albert Chu
 """
 
 # Welcoming Code
-print("hi")
+print()
 print("Welcome to the world of MADLI85.")
 print("Fill in the blanks to many of your childhood stories!")
 print("Use your silly, funny, and outrageous imagination!")
