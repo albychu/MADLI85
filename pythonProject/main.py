@@ -1,16 +1,13 @@
 #!/usr/bin/env python3
 
-
-# import stories  <---- access api
-# import sys <--- to stop from breaking
-
-
 """
 This script is intended to show my project and what I learned in class.
 
 Author | Albert Chu
 
 """
+import re
+
 
 # Welcoming Code
 print("Intoduction:\n"
@@ -20,36 +17,31 @@ print("Intoduction:\n"
 print(input("PRESS ENTER TO BEGIN."))
 
 
-adj1 = input("Adjective: " )
-vrb1 = input("Verb: " )
-vrb2 = input("Verb: " )
-noun1 = input("Noun: " )
-anim1 = input("Animal: " )
-food1 = input("Food: " )
-occu1 = input("Occupation: " )
-locat1 = input("Location: " )
+
+file = open ("pythonProject/Storiez.txt")
+sentence = file.read()
+file.close()
+regex = re.compile(r"ADJECTIVE|NOUN|VERB|ADVERB")
+
+while True:
+    match = regex.search(sentence)
+    if match == None:
+        break
+    elif match.group() == "ADJECTIVE":
+        print ("Enter Adjective: ")
+    elif match.group() == "NOUN"
+        print ("Enter Noun: ")
+    elif match.group() == "VERB":
+        print ("Enter Verb: ")
+    elif match.group() == "ADVERB":
+        print ("Enter Adverb: ")
+    word = input()
+    sentence = sentence.replace(match.group(), word, 1)
+
+newFile = open("pythonProject/NewStoriez.txt", "w")
+newFile.write(sentence)
+newFile.close()
 
 
-proverbs1 = f"A {anim1} in hand is worth two in the bush. \nA {food1} a day keeps the {occu1} away."
 
-proverbs2 = f"{locat1} wasn't built in a day. \nCuriosity {vrb2} the cat."
-
-
-
-
-
-#story_finder()
-#favorite = input("Is this one of your favorite stories? Type In CAPS YES/NO: ")
-
-#while True:
- #   if favorite.upper() == 'NO':
-  #      story_finder()
-   #     favorite = input("Is this one of your favorite stories? In CAPS YES/NO: ")
-    #    print()
-  #  elif favorite.upper() == 'YES':
-   #     print()
-    #    break
-    # elif favorite.upper() != 'YES' or 'NO':
-      #  print("Invalid Input. Please Type In CAPS YES/NO")
-       # favorite = input("Is this one of your favorite stories? In CAPS YES/NO: ")
 
