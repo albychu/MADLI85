@@ -11,8 +11,8 @@ import re
 
 # Welcoming Code
 print("Intoduction:\n"
-    "Welcome to the world of MADLI85."
-    "Fill in the blanks!")
+    "Welcome to the world of MADLI85.\n"
+    "Fill in the blanks!\n")
 print(input("PRESS ENTER TO BEGIN."))
 
 
@@ -37,7 +37,7 @@ while True:
         print ("Enter Adjective: ")
     elif match.group() == "NOUN":
         print ("Enter Noun: ")
-    elif match.group() == "VERB":
+    elif match.group() == "VERB1":
         print ("Enter Verb: ")
     elif match.group() == "VERB2":
         print("Enter Verb: ")
