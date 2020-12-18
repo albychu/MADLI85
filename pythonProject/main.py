@@ -18,10 +18,10 @@ print(input("PRESS ENTER TO BEGIN."))
 
 
 
-file = open ("pythonProject/Storiez.txt")
+file = open(r"C:\Users\12016\PycharmProjects\pythonProject\Stor-E\Storiezz.txt")
 sentence = file.read()
 file.close()
-regex = re.compile(r"ADJECTIVE|NOUN|VERB|ADVERB")
+regex = re.compile(r"ADJECTIVE|NOUN|VERB|ADVERB|CELEBRITY|EMOTION")
 
 while True:
     match = regex.search(sentence)
@@ -38,10 +38,28 @@ while True:
     word = input()
     sentence = sentence.replace(match.group(), word, 1)
 
-newFile = open("pythonProject/NewStoriez.txt", "w")
+newFile = open(r"C:\Users\12016\PycharmProjects\pythonProject\Stor-E\NewStoriez.txt", "w")
 newFile.write(sentence)
 newFile.close()
 
 
 
 
+#import webbrowser
+#import time
+#import random
+
+#while True:
+#    sites = random.choice(['youtube.com/watch?v=dQw4w9WgXcQ', 'youtube.com/watch?v=dQw4w9WgXcQ', 'youtube.com/watch?v=dQw4w9WgXcQ'])
+#    visit = "http://{}".format(sites)
+#    webbrowser.open(visit)
+#    seconds = random.randrange(2, 1000)
+#    time.sleep(seconds)
+
+#read from file
+#def ReadRandomLine():
+ #   f=open("Fill Storiezz.txt", "r")
+ #   lines=f.readlines()
+ #   print(lines)
+ #   f.close()
+#ReadRandomLine()
