@@ -16,7 +16,6 @@ print("Intoduction:\n"
 print(input("PRESS ENTER TO BEGIN."))
 
 
-
 # this is the file that has the story
 file = open(r"C:\Users\12016\PycharmProjects\pythonProject\Stor-E\Storiezz.txt")
 sentence = file.read()
