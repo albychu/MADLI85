@@ -10,9 +10,8 @@ import re
 
 
 # Welcoming Code
-print("Intoduction:\n"
-    "Welcome to the world of MADLI85.\n"
-    "Fill in the blanks!\n")
+print("Welcome to the world of MADLI85.\n"
+"Fill in the blanks!\n")
 print(input("PRESS ENTER TO BEGIN."))
 
 
