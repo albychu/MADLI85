@@ -7,8 +7,8 @@ Author | Albert Chu
 
 # intro
 print("Welcome to Musical MadLibs!\n")
-first_name = input("What is your name? ")
-print("Thanks, " + first_name + "!\n")
+whoareu = input("What is your name? ")
+print("Thanks, " + whoareu + "!\n")
 
 input("Press the ENTER key to continue...\n")
 
